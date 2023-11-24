@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F33FBB112B10B98B0030F191 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F33FBB102B10B98B0030F191 /* GoogleService-Info.plist */; };
 		F37B0B302B0A32E600F6B833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B2F2B0A32E600F6B833 /* AppDelegate.swift */; };
 		F37B0B322B0A32E600F6B833 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B312B0A32E600F6B833 /* SceneDelegate.swift */; };
 		F37B0B392B0A32E700F6B833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F37B0B382B0A32E700F6B833 /* Assets.xcassets */; };
@@ -49,20 +50,20 @@
 		F37B0B9D2B0A3EE200F6B833 /* SettingProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B9C2B0A3EE200F6B833 /* SettingProfileViewController.swift */; };
 		F37B0B9F2B0A3EFE00F6B833 /* SettingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B9E2B0A3EFE00F6B833 /* SettingManager.swift */; };
 		F37B0BA22B0A408C00F6B833 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0BA12B0A408C00F6B833 /* TabBarController.swift */; };
-		F37B0BA72B0A44C400F6B833 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F37B0BA62B0A44C400F6B833 /* GoogleService-Info.plist */; };
 		F37B0BAA2B0A451B00F6B833 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F37B0BA92B0A451B00F6B833 /* FirebaseAuth */; };
 		F37B0BAC2B0A451B00F6B833 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F37B0BAB2B0A451B00F6B833 /* FirebaseFirestore */; };
 		F37B0BAE2B0A451B00F6B833 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F37B0BAD2B0A451B00F6B833 /* FirebaseStorage */; };
-		F37B0BB02B0A460900F6B833 /* bensound-pleasewatchmyback.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F37B0BAF2B0A460900F6B833 /* bensound-pleasewatchmyback.mp3 */; };
-		F37B0BB22B0A462900F6B833 /* bensound-itmighttakeawhile.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F37B0BB12B0A462800F6B833 /* bensound-itmighttakeawhile.mp3 */; };
-		F37B0BB42B0A463C00F6B833 /* bensound-growingold.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F37B0BB32B0A463C00F6B833 /* bensound-growingold.mp3 */; };
-		F37B0BB62B0A465F00F6B833 /* bensound-jumpingbean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F37B0BB52B0A465F00F6B833 /* bensound-jumpingbean.mp3 */; };
-		F37B0BB82B0A467F00F6B833 /* bensound-jambomambo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F37B0BB72B0A467F00F6B833 /* bensound-jambomambo.mp3 */; };
-		F37B0BBA2B0A469700F6B833 /* bensound-elevation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F37B0BB92B0A469700F6B833 /* bensound-elevation.mp3 */; };
-		F37B0BBC2B0A46A900F6B833 /* bensound-everyminuteisaneternity.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F37B0BBB2B0A46A900F6B833 /* bensound-everyminuteisaneternity.mp3 */; };
+		F3BE0BEC2B0BA43F00C3D369 /* bensound-pleasewatchmyback.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3BE0BEA2B0BA43F00C3D369 /* bensound-pleasewatchmyback.mp3 */; };
+		F3BE0BED2B0BA43F00C3D369 /* bensound-itmighttakeawhile.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3BE0BEB2B0BA43F00C3D369 /* bensound-itmighttakeawhile.mp3 */; };
+		F3BE0BF12B0BA44D00C3D369 /* bensound-jambomambo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3BE0BEE2B0BA44D00C3D369 /* bensound-jambomambo.mp3 */; };
+		F3BE0BF22B0BA44D00C3D369 /* bensound-elevation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3BE0BEF2B0BA44D00C3D369 /* bensound-elevation.mp3 */; };
+		F3BE0BF32B0BA44D00C3D369 /* bensound-everyminuteisaneternity.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3BE0BF02B0BA44D00C3D369 /* bensound-everyminuteisaneternity.mp3 */; };
+		F3BE0BF62B0BA45800C3D369 /* bensound-growingold.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3BE0BF42B0BA45800C3D369 /* bensound-growingold.mp3 */; };
+		F3BE0BF72B0BA45800C3D369 /* bensound-jumpingbean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3BE0BF52B0BA45800C3D369 /* bensound-jumpingbean.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F33FBB102B10B98B0030F191 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "DiplomProject2/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F37B0B2C2B0A32E600F6B833 /* DiplomProject2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiplomProject2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37B0B2F2B0A32E600F6B833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F37B0B312B0A32E600F6B833 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,14 +108,13 @@
 		F37B0B9C2B0A3EE200F6B833 /* SettingProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingProfileViewController.swift; sourceTree = "<group>"; };
 		F37B0B9E2B0A3EFE00F6B833 /* SettingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingManager.swift; sourceTree = "<group>"; };
 		F37B0BA12B0A408C00F6B833 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		F37B0BA62B0A44C400F6B833 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		F37B0BAF2B0A460900F6B833 /* bensound-pleasewatchmyback.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-pleasewatchmyback.mp3"; path = "../../../../../../Downloads/bensound-pleasewatchmyback.mp3"; sourceTree = "<group>"; };
-		F37B0BB12B0A462800F6B833 /* bensound-itmighttakeawhile.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-itmighttakeawhile.mp3"; path = "../../../../../../Downloads/bensound-itmighttakeawhile.mp3"; sourceTree = "<group>"; };
-		F37B0BB32B0A463C00F6B833 /* bensound-growingold.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-growingold.mp3"; path = "../../../../../../Downloads/bensound-growingold.mp3"; sourceTree = "<group>"; };
-		F37B0BB52B0A465F00F6B833 /* bensound-jumpingbean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-jumpingbean.mp3"; path = "../../../../../../Downloads/bensound-jumpingbean.mp3"; sourceTree = "<group>"; };
-		F37B0BB72B0A467F00F6B833 /* bensound-jambomambo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-jambomambo.mp3"; path = "../../../../../../Downloads/bensound-jambomambo.mp3"; sourceTree = "<group>"; };
-		F37B0BB92B0A469700F6B833 /* bensound-elevation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-elevation.mp3"; path = "../../../../../../Downloads/bensound-elevation.mp3"; sourceTree = "<group>"; };
-		F37B0BBB2B0A46A900F6B833 /* bensound-everyminuteisaneternity.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-everyminuteisaneternity.mp3"; path = "../../../../../../Downloads/bensound-everyminuteisaneternity.mp3"; sourceTree = "<group>"; };
+		F3BE0BEA2B0BA43F00C3D369 /* bensound-pleasewatchmyback.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-pleasewatchmyback.mp3"; sourceTree = "<group>"; };
+		F3BE0BEB2B0BA43F00C3D369 /* bensound-itmighttakeawhile.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-itmighttakeawhile.mp3"; sourceTree = "<group>"; };
+		F3BE0BEE2B0BA44D00C3D369 /* bensound-jambomambo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-jambomambo.mp3"; sourceTree = "<group>"; };
+		F3BE0BEF2B0BA44D00C3D369 /* bensound-elevation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-elevation.mp3"; sourceTree = "<group>"; };
+		F3BE0BF02B0BA44D00C3D369 /* bensound-everyminuteisaneternity.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-everyminuteisaneternity.mp3"; sourceTree = "<group>"; };
+		F3BE0BF42B0BA45800C3D369 /* bensound-growingold.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-growingold.mp3"; sourceTree = "<group>"; };
+		F3BE0BF52B0BA45800C3D369 /* bensound-jumpingbean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-jumpingbean.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +134,6 @@
 		F37B0B232B0A32E600F6B833 = {
 			isa = PBXGroup;
 			children = (
-				F37B0BA62B0A44C400F6B833 /* GoogleService-Info.plist */,
 				F37B0B2E2B0A32E600F6B833 /* DiplomProject2 */,
 				F37B0B2D2B0A32E600F6B833 /* Products */,
 			);
@@ -348,6 +347,7 @@
 				F37B0B3A2B0A32E700F6B833 /* LaunchScreen.storyboard */,
 				F37B0B382B0A32E700F6B833 /* Assets.xcassets */,
 				F37B0B312B0A32E600F6B833 /* SceneDelegate.swift */,
+				F33FBB102B10B98B0030F191 /* GoogleService-Info.plist */,
 				F37B0B2F2B0A32E600F6B833 /* AppDelegate.swift */,
 			);
 			path = AppSettings;
@@ -356,8 +356,8 @@
 		F37B0BA32B0A40A200F6B833 /* acoustic */ = {
 			isa = PBXGroup;
 			children = (
-				F37B0BB12B0A462800F6B833 /* bensound-itmighttakeawhile.mp3 */,
-				F37B0BAF2B0A460900F6B833 /* bensound-pleasewatchmyback.mp3 */,
+				F3BE0BEB2B0BA43F00C3D369 /* bensound-itmighttakeawhile.mp3 */,
+				F3BE0BEA2B0BA43F00C3D369 /* bensound-pleasewatchmyback.mp3 */,
 			);
 			path = acoustic;
 			sourceTree = "<group>";
@@ -365,8 +365,8 @@
 		F37B0BA42B0A40BE00F6B833 /* jazz */ = {
 			isa = PBXGroup;
 			children = (
-				F37B0BB32B0A463C00F6B833 /* bensound-growingold.mp3 */,
-				F37B0BB52B0A465F00F6B833 /* bensound-jumpingbean.mp3 */,
+				F3BE0BF42B0BA45800C3D369 /* bensound-growingold.mp3 */,
+				F3BE0BF52B0BA45800C3D369 /* bensound-jumpingbean.mp3 */,
 			);
 			path = jazz;
 			sourceTree = "<group>";
@@ -374,9 +374,9 @@
 		F37B0BA52B0A40E600F6B833 /* cinematic */ = {
 			isa = PBXGroup;
 			children = (
-				F37B0BBB2B0A46A900F6B833 /* bensound-everyminuteisaneternity.mp3 */,
-				F37B0BB92B0A469700F6B833 /* bensound-elevation.mp3 */,
-				F37B0BB72B0A467F00F6B833 /* bensound-jambomambo.mp3 */,
+				F3BE0BEF2B0BA44D00C3D369 /* bensound-elevation.mp3 */,
+				F3BE0BF02B0BA44D00C3D369 /* bensound-everyminuteisaneternity.mp3 */,
+				F3BE0BEE2B0BA44D00C3D369 /* bensound-jambomambo.mp3 */,
 			);
 			path = cinematic;
 			sourceTree = "<group>";
@@ -447,16 +447,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F37B0BB62B0A465F00F6B833 /* bensound-jumpingbean.mp3 in Resources */,
+				F3BE0BF22B0BA44D00C3D369 /* bensound-elevation.mp3 in Resources */,
+				F3BE0BF62B0BA45800C3D369 /* bensound-growingold.mp3 in Resources */,
+				F3BE0BF32B0BA44D00C3D369 /* bensound-everyminuteisaneternity.mp3 in Resources */,
 				F37B0B3C2B0A32E700F6B833 /* LaunchScreen.storyboard in Resources */,
-				F37B0BB22B0A462900F6B833 /* bensound-itmighttakeawhile.mp3 in Resources */,
+				F3BE0BED2B0BA43F00C3D369 /* bensound-itmighttakeawhile.mp3 in Resources */,
 				F37B0B392B0A32E700F6B833 /* Assets.xcassets in Resources */,
-				F37B0BA72B0A44C400F6B833 /* GoogleService-Info.plist in Resources */,
-				F37B0BB82B0A467F00F6B833 /* bensound-jambomambo.mp3 in Resources */,
-				F37B0BB42B0A463C00F6B833 /* bensound-growingold.mp3 in Resources */,
-				F37B0BBC2B0A46A900F6B833 /* bensound-everyminuteisaneternity.mp3 in Resources */,
-				F37B0BBA2B0A469700F6B833 /* bensound-elevation.mp3 in Resources */,
-				F37B0BB02B0A460900F6B833 /* bensound-pleasewatchmyback.mp3 in Resources */,
+				F3BE0BF12B0BA44D00C3D369 /* bensound-jambomambo.mp3 in Resources */,
+				F33FBB112B10B98B0030F191 /* GoogleService-Info.plist in Resources */,
+				F3BE0BEC2B0BA43F00C3D369 /* bensound-pleasewatchmyback.mp3 in Resources */,
+				F3BE0BF72B0BA45800C3D369 /* bensound-jumpingbean.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
