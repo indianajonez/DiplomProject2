@@ -15,7 +15,7 @@
 
 ### Используемые технологии
 
-Swift, Xcode, Git, GitHub, Instruments, CoreData, Notifications, UIKit, Grand Central Dispatch, Firebase
+<a href="https://www.liblogo.com/lib/swift-logo.html" title="Swift Logo"><img src="https://www.liblogo.com/img-logo/sml/sw195a64c-swift-logo-apple-bird-code-ios-logo-swift-icon-free-download.webp" width="20"></a> Swift, <a href="https://www.liblogo.com/lib/xcode-logo.html" title="Xcode Logo"><img src="https://www.liblogo.com/img-logo/sml/xc6605m433-xcode-logo-marriott-library-apple-infrastructure-securely-deploying-xcode.webp" width="20"></a> Xcode, Git, GitHub, Instruments, CoreData, Notifications, UIKit, Grand Central Dispatch, Firebase
 
 ### Вход в приложение 
 
@@ -64,4 +64,3 @@ Swift, Xcode, Git, GitHub, Instruments, CoreData, Notifications, UIKit, Grand Ce
 <img src="https://github.com/indianajonez/DiplomProject/blob/main/12.png" width="200"/>
 
 
-<a href="https://www.liblogo.com/lib/swift-logo.html" title="Swift Logo"><img src="https://www.liblogo.com/img-logo/sml/sw195a64c-swift-logo-apple-bird-code-ios-logo-swift-icon-free-download.webp" width="5"></a>
