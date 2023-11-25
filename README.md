@@ -15,7 +15,7 @@
 
 ### Используемые технологии
 
-<a href="https://www.liblogo.com/lib/swift-logo.html" title="Swift Logo"><img src="https://www.liblogo.com/img-logo/sml/sw195a64c-swift-logo-apple-bird-code-ios-logo-swift-icon-free-download.webp" width="20"></a> Swift, <a href="https://www.liblogo.com/lib/xcode-logo.html" title="Xcode Logo"><img src="https://www.liblogo.com/img-logo/sml/xc6605m433-xcode-logo-marriott-library-apple-infrastructure-securely-deploying-xcode.webp" width="20"></a> Xcode, Git, GitHub, Instruments, <img src="https://habr.com/ru/articles/198242/#gallery" width="20"/>  CoreData, Notifications, UIKit, Grand Central Dispatch, <a href="https://www.liblogo.com/lib/firebase-logo.html" title="Firebase Logo"><img src="https://www.liblogo.com/img-logo/sml/fi273fe35-firebase-logo-firebase-brand-guidelines.webp" width="20"></a> Firebase
+<a href="https://www.liblogo.com/lib/swift-logo.html" title="Swift Logo"><img src="https://www.liblogo.com/img-logo/sml/sw195a64c-swift-logo-apple-bird-code-ios-logo-swift-icon-free-download.webp" width="20"></a> Swift, <a href="https://www.liblogo.com/lib/xcode-logo.html" title="Xcode Logo"><img src="https://www.liblogo.com/img-logo/sml/xc6605m433-xcode-logo-marriott-library-apple-infrastructure-securely-deploying-xcode.webp" width="20"></a> Xcode, Git, GitHub, Instruments, <img src="https://images.app.goo.gl/D28jpv7CTV1tayxC7" width="20"/>  CoreData, Notifications, UIKit, Grand Central Dispatch, <a href="https://www.liblogo.com/lib/firebase-logo.html" title="Firebase Logo"><img src="https://www.liblogo.com/img-logo/sml/fi273fe35-firebase-logo-firebase-brand-guidelines.webp" width="20"></a> Firebase
 
 ### Вход в приложение 
 
