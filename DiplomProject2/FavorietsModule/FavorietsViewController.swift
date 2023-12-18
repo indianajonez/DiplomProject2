@@ -45,13 +45,16 @@ class FavorietsViewController: UIViewController {
     
     //MARK: - Private methods
     
+    //TODO: Зачем на главный поток переводить? Разве ты была на фоновом при получении постов из кор даты? Также зачем в кложуре [weak self]? У тебя есть retain cycle?
+    
     private func getFromCoreData() {
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "PostStorage")
         favoriteData = CoreDataManager.shared.fetchData(fetchRequest)
-        DispatchQueue.main.async { [weak self] in
+        DispatchQueue.main.async { [weak self] in // как отправить не на главный поток
             guard let self = self else {return}
             self.postTableView.reloadData()
         }
+        self.postTableView.reloadData()
     }
     
     private func setupView() {

@@ -63,7 +63,7 @@ final class CheckerService: CheckerServiceProtocol {
     
     func hasUserSession() -> Bool {
         guard let _ = Auth.auth().currentUser else {
-            return Auth.auth().currentUser != nil //return //false
+            return Auth.auth().currentUser != nil //return //false // TODO: done
         }
         return true
     }

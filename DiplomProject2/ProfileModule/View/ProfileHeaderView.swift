@@ -104,7 +104,7 @@ class ProfileHeaderView: UIView {
     func setupView(user: User?) {
         if let user = user {
             self.fullNameLabel.text = user.fullName
-            self.avatarImageView.image = user.avatar
+//            self.avatarImageView.image = user.avatar
             self.labelUserName.text = user.name
             self.labelAboutUser.text = user.aboutUser
             self.labelAge.text = user.age
@@ -113,7 +113,7 @@ class ProfileHeaderView: UIView {
     
     func updateInfo(user: User?) {
         guard let user = user else {return}
-        self.avatarImageView.image = user.avatar
+//        self.avatarImageView.image = user.avatar
         self.labelAboutUser.text = user.aboutUser
         self.labelAge.text = user.age
         self.labelUserName.text = user.name

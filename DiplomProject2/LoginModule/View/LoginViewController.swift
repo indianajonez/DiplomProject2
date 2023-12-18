@@ -8,7 +8,7 @@
 import UIKit
 import FirebaseAuth
 
-//TODO: Почему в Login checkerService закрыт протоколом и инджектится через конструктор, а в RegistrationViewController у вас композиция, и checkerService порождается непосредственно контроллером?) Наверное, надо как-то унифицировать. Первый вариант, как в LoginViewController правильнее.
+//TODO: Почему в Login checkerService закрыт протоколом и инджектится через конструктор, а в RegistrationViewController у вас композиция, и checkerService порождается непосредственно контроллером?) Наверное, надо как-то унифицировать. Первый вариант, как в LoginViewController правильнее. DONE
 
 class LoginViewController: UIViewController {
     
@@ -92,13 +92,12 @@ class LoginViewController: UIViewController {
         return button
     }()
     
-    //MARK: - Live Cycls
+    //MARK: -Init
     
-        init(checkerService: CheckerServiceProtocol) {
-            super.init(nibName: nil, bundle: nil)
-            self.checkerService = checkerService
-            
-        }
+    init(checkerService: CheckerServiceProtocol) {
+        self.checkerService = checkerService
+        super.init(nibName: nil, bundle: nil)
+    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -115,7 +114,10 @@ class LoginViewController: UIViewController {
         view.backgroundColor = UIColor.createColor(lightMode: .white, darkMode: .black)
         self.navigationItem.setHidesBackButton(true, animated:true)
         
-        Auth.auth().addStateDidChangeListener{ auth, user in // заходим в профайл если данные получены корректно
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        Auth.auth().addStateDidChangeListener { auth, user in
             
         }
     }
@@ -192,22 +194,31 @@ class LoginViewController: UIViewController {
     
     @objc
     private func didTapLoginButton() {
-        print("tap")
+        
         let login = self.loginTextField.text ?? ""
+        // нужно добавить и унифицировать forKey { _ in self.userDefaults.setValue(true, forKey: " logged_in ")
         let password = self.passwordTextField.text ?? ""
-        checkerService?.logIn(email: login, pass: password) { user, errorString in
+        checkerService?.logIn(email: login, pass: password) { user, errorString in // NOTTODO: не заходит
             guard let user else {
                 self.makeWrongAlert(massage: errorString ?? "Неверный логин или пароль")
                 return
             }
+            ManagerUserDefaults.shared.setSessionStatus(true)
+            ManagerUserDefaults.shared.saveUser(user)
+            
             let profileVC = ProfileViewController(user: user)
-            self.navigationController?.pushViewController(TabBarController(profileVC: profileVC), animated: true)
+            guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+            let sceneDelegate = windowScene.delegate as? SceneDelegate else { return }
+            let tabbar = TabBarController(profileVC: profileVC)
+            sceneDelegate.window?.rootViewController = tabbar
+            //let profileVC = ProfileViewController(user: user)
+            //self.navigationController?.pushViewController(TabBarController(profileVC: profileVC), animated: true)
         }
     }
     
     @objc
     private func didTapRegistrationButton() {
-        self.navigationController?.pushViewController(RegistrationViewController(), animated: true)
+        self.navigationController?.pushViewController(RegistrationViewController(checkerService: CheckerService()), animated: true)
     }
 }
 

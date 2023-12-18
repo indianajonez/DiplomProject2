@@ -20,8 +20,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow (windowScene: scene)
         self.window = window
         window.makeKeyAndVisible()
-        let navigation = UINavigationController(rootViewController: LoginViewController(checkerService: CheckerService()))
-        window.rootViewController = navigation
+        //let navigation = UINavigationController(rootViewController: LoginViewController(checkerService: CheckerService()))
+//        window.rootViewController = navigation
+        print(ManagerUserDefaults.shared.getSessionStatus())
+        // Проверяю наличие сохраненной сессии
+        if ManagerUserDefaults.shared.getSessionStatus() {
+            // Если сесссия есть, создаем и отображаем таб-бар
+            let user = ManagerUserDefaults.shared.getUser()
+            let profileVC = ProfileViewController(user: user)
+            let tabBarViewController = TabBarController(profileVC: profileVC)
+            window.rootViewController = tabBarViewController
+            
+        } else {
+            // Если сессии нет, показываем экран логина
+            let navigation = UINavigationController(rootViewController: LoginViewController(checkerService: CheckerService()))
+            window.rootViewController = navigation
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -43,6 +57,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneDidEnterBackground(_ scene: UIScene) {
 
     }
+    
 }
 
 

@@ -8,9 +8,9 @@
 import Foundation
 
 struct Album {
-    var name: String
-    var image: String
-    var songs: [Song]
+    let name: String
+    let image: String
+    let songs: [Song]
 }
     
 extension Album {

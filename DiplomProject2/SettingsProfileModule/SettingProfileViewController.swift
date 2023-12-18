@@ -188,16 +188,16 @@ class SettingsProfileViewController: UIViewController {
     private func setupInfo() {
         guard let user = self.user else {return}
         self.textFieldName.text = user.name
-        self.addPhotoImageView.image = user.avatar
+//        self.addPhotoImageView.image = user.avatar
         self.textFieldAge.text = user.age
         self.textFieldAboutUser.text = user.aboutUser
     }
     
     @objc
     private func didTapSavedButton() {
-        guard let user = self.user else {return}
+        guard var user = self.user else {return}
         user.name = self.textFieldName.text
-        user.avatar = self.addPhotoImageView.image
+//        user.avatar = self.addPhotoImageView.image
         user.age = self.textFieldAge.text
         user.aboutUser = self.textFieldAboutUser.text
         settingManager.isNeedUpdate = true

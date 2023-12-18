@@ -106,6 +106,7 @@ class ProfileViewController: UIViewController {
     @objc
     func logoutTapped() {
         let loginVC = LoginViewController(checkerService: CheckerService())
+        ManagerUserDefaults.shared.setSessionStatus(false)
         navigationController?.pushViewController(loginVC, animated: true)
         self.tabBarController?.tabBar.isHidden = true
     }

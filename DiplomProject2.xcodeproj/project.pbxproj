@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F33FBB112B10B98B0030F191 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F33FBB102B10B98B0030F191 /* GoogleService-Info.plist */; };
 		F37B0B302B0A32E600F6B833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B2F2B0A32E600F6B833 /* AppDelegate.swift */; };
 		F37B0B322B0A32E600F6B833 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B312B0A32E600F6B833 /* SceneDelegate.swift */; };
 		F37B0B392B0A32E700F6B833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F37B0B382B0A32E700F6B833 /* Assets.xcassets */; };
@@ -26,12 +25,11 @@
 		F37B0B612B0A378200F6B833 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B602B0A378200F6B833 /* Song.swift */; };
 		F37B0B672B0A386200F6B833 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B662B0A386200F6B833 /* User.swift */; };
 		F37B0B692B0A388700F6B833 /* UserServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B682B0A388600F6B833 /* UserServiceProtocol.swift */; };
-		F37B0B6B2B0A38AE00F6B833 /* RegistrationAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B6A2B0A38AE00F6B833 /* RegistrationAlert.swift */; };
 		F37B0B6D2B0A38E600F6B833 /* CheckService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B6C2B0A38E600F6B833 /* CheckService.swift */; };
 		F37B0B6F2B0A390800F6B833 /* CurrentUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B6E2B0A390800F6B833 /* CurrentUserService.swift */; };
 		F37B0B712B0A393100F6B833 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B702B0A393100F6B833 /* LoginViewController.swift */; };
 		F37B0B732B0A396600F6B833 /* LoginViewControllerDelegateError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B722B0A396600F6B833 /* LoginViewControllerDelegateError.swift */; };
-		F37B0B752B0A399D00F6B833 /* LoginViewControllerDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B742B0A399D00F6B833 /* LoginViewControllerDelegateProtocol.swift */; };
+		F37B0B752B0A399D00F6B833 /* LoginViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B742B0A399D00F6B833 /* LoginViewControllerDelegate.swift */; };
 		F37B0B772B0A39CB00F6B833 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B762B0A39CB00F6B833 /* RegistrationViewController.swift */; };
 		F37B0B7C2B0A3A8A00F6B833 /* Post2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B7B2B0A3A8A00F6B833 /* Post2.swift */; };
 		F37B0B7E2B0A3B9000F6B833 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B7D2B0A3B9000F6B833 /* ProfileViewController.swift */; };
@@ -60,10 +58,11 @@
 		F3BE0BF32B0BA44D00C3D369 /* bensound-everyminuteisaneternity.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3BE0BF02B0BA44D00C3D369 /* bensound-everyminuteisaneternity.mp3 */; };
 		F3BE0BF62B0BA45800C3D369 /* bensound-growingold.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3BE0BF42B0BA45800C3D369 /* bensound-growingold.mp3 */; };
 		F3BE0BF72B0BA45800C3D369 /* bensound-jumpingbean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3BE0BF52B0BA45800C3D369 /* bensound-jumpingbean.mp3 */; };
+		F3EC02FB2B30B97600F9C273 /* ManagerUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EC02FA2B30B97600F9C273 /* ManagerUserDefaults.swift */; };
+		F3EC03012B30C4F000F9C273 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3EC03002B30C4F000F9C273 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F33FBB102B10B98B0030F191 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "DiplomProject2/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F37B0B2C2B0A32E600F6B833 /* DiplomProject2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiplomProject2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37B0B2F2B0A32E600F6B833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F37B0B312B0A32E600F6B833 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,12 +83,11 @@
 		F37B0B602B0A378200F6B833 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		F37B0B662B0A386200F6B833 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F37B0B682B0A388600F6B833 /* UserServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceProtocol.swift; sourceTree = "<group>"; };
-		F37B0B6A2B0A38AE00F6B833 /* RegistrationAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationAlert.swift; sourceTree = "<group>"; };
 		F37B0B6C2B0A38E600F6B833 /* CheckService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckService.swift; sourceTree = "<group>"; };
 		F37B0B6E2B0A390800F6B833 /* CurrentUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserService.swift; sourceTree = "<group>"; };
 		F37B0B702B0A393100F6B833 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F37B0B722B0A396600F6B833 /* LoginViewControllerDelegateError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerDelegateError.swift; sourceTree = "<group>"; };
-		F37B0B742B0A399D00F6B833 /* LoginViewControllerDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerDelegateProtocol.swift; sourceTree = "<group>"; };
+		F37B0B742B0A399D00F6B833 /* LoginViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerDelegate.swift; sourceTree = "<group>"; };
 		F37B0B762B0A39CB00F6B833 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		F37B0B7B2B0A3A8A00F6B833 /* Post2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post2.swift; sourceTree = "<group>"; };
 		F37B0B7D2B0A3B9000F6B833 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +113,8 @@
 		F3BE0BF02B0BA44D00C3D369 /* bensound-everyminuteisaneternity.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-everyminuteisaneternity.mp3"; sourceTree = "<group>"; };
 		F3BE0BF42B0BA45800C3D369 /* bensound-growingold.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-growingold.mp3"; sourceTree = "<group>"; };
 		F3BE0BF52B0BA45800C3D369 /* bensound-jumpingbean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-jumpingbean.mp3"; sourceTree = "<group>"; };
+		F3EC02FA2B30B97600F9C273 /* ManagerUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerUserDefaults.swift; sourceTree = "<group>"; };
+		F3EC03002B30C4F000F9C273 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +162,7 @@
 				F37B0BA02B0A3F1D00F6B833 /* AppSettings */,
 				F37B0B3D2B0A32E700F6B833 /* Info.plist */,
 				F37B0BA12B0A408C00F6B833 /* TabBarController.swift */,
+				F3EC02FA2B30B97600F9C273 /* ManagerUserDefaults.swift */,
 			);
 			path = DiplomProject2;
 			sourceTree = "<group>";
@@ -238,7 +239,6 @@
 			children = (
 				F37B0B662B0A386200F6B833 /* User.swift */,
 				F37B0B682B0A388600F6B833 /* UserServiceProtocol.swift */,
-				F37B0B6A2B0A38AE00F6B833 /* RegistrationAlert.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -257,7 +257,7 @@
 			children = (
 				F37B0B702B0A393100F6B833 /* LoginViewController.swift */,
 				F37B0B722B0A396600F6B833 /* LoginViewControllerDelegateError.swift */,
-				F37B0B742B0A399D00F6B833 /* LoginViewControllerDelegateProtocol.swift */,
+				F37B0B742B0A399D00F6B833 /* LoginViewControllerDelegate.swift */,
 				F37B0B762B0A39CB00F6B833 /* RegistrationViewController.swift */,
 			);
 			path = View;
@@ -345,9 +345,9 @@
 			isa = PBXGroup;
 			children = (
 				F37B0B3A2B0A32E700F6B833 /* LaunchScreen.storyboard */,
+				F3EC03002B30C4F000F9C273 /* GoogleService-Info.plist */,
 				F37B0B382B0A32E700F6B833 /* Assets.xcassets */,
 				F37B0B312B0A32E600F6B833 /* SceneDelegate.swift */,
-				F33FBB102B10B98B0030F191 /* GoogleService-Info.plist */,
 				F37B0B2F2B0A32E600F6B833 /* AppDelegate.swift */,
 			);
 			path = AppSettings;
@@ -454,7 +454,7 @@
 				F3BE0BED2B0BA43F00C3D369 /* bensound-itmighttakeawhile.mp3 in Resources */,
 				F37B0B392B0A32E700F6B833 /* Assets.xcassets in Resources */,
 				F3BE0BF12B0BA44D00C3D369 /* bensound-jambomambo.mp3 in Resources */,
-				F33FBB112B10B98B0030F191 /* GoogleService-Info.plist in Resources */,
+				F3EC03012B30C4F000F9C273 /* GoogleService-Info.plist in Resources */,
 				F3BE0BEC2B0BA43F00C3D369 /* bensound-pleasewatchmyback.mp3 in Resources */,
 				F3BE0BF72B0BA45800C3D369 /* bensound-jumpingbean.mp3 in Resources */,
 			);
@@ -480,7 +480,7 @@
 				F37B0B872B0A3C5B00F6B833 /* Friends.swift in Sources */,
 				F37B0B842B0A3C2A00F6B833 /* PostTableViewCell.swift in Sources */,
 				F37B0B5F2B0A376300F6B833 /* Album.swift in Sources */,
-				F37B0B6B2B0A38AE00F6B833 /* RegistrationAlert.swift in Sources */,
+				F3EC02FB2B30B97600F9C273 /* ManagerUserDefaults.swift in Sources */,
 				F37B0B922B0A3DC900F6B833 /* Photos.swift in Sources */,
 				F37B0B472B0A351C00F6B833 /* ExtentionUIView.swift in Sources */,
 				F37B0B7E2B0A3B9000F6B833 /* ProfileViewController.swift in Sources */,
@@ -504,7 +504,7 @@
 				F37B0B8D2B0A3CE400F6B833 /* FriendsGelleryDelegateProtocol.swift in Sources */,
 				F37B0B5A2B0A370200F6B833 /* MediaPlayerViewController.swift in Sources */,
 				F37B0B552B0A369B00F6B833 /* AlbumTableView.swift in Sources */,
-				F37B0B752B0A399D00F6B833 /* LoginViewControllerDelegateProtocol.swift in Sources */,
+				F37B0B752B0A399D00F6B833 /* LoginViewControllerDelegate.swift in Sources */,
 				F37B0B982B0A3E4200F6B833 /* PhotosViewController.swift in Sources */,
 				F37B0B7C2B0A3A8A00F6B833 /* Post2.swift in Sources */,
 			);

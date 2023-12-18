@@ -11,7 +11,8 @@ class RegistrationViewController: UIViewController {
     
     //MARK: - Private properties
     
-    private let checkerService = CheckerService()
+    //    private let checkerService = CheckerService()
+    private var checkerService: CheckerServiceProtocol?
     
     private lazy var scrollView: UIScrollView = {
         let scroll = UIScrollView()
@@ -25,7 +26,7 @@ class RegistrationViewController: UIViewController {
         title.text = "Регистрация"
         title.font = .boldSystemFont(ofSize: 40)
         title.textColor = .gray
-       
+        
         return title
     }()
     
@@ -96,6 +97,18 @@ class RegistrationViewController: UIViewController {
         return button
     }()
     
+    //MARK: -Init
+    
+    init(checkerService: CheckerServiceProtocol) { //TODO: done унифицицировала ( убрала композицию, пораждение за счет конструктора)
+        super.init(nibName: nil, bundle: nil)
+        self.checkerService = checkerService
+        
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     //MARK: - Life cycls
     
     override func viewDidLoad() {
@@ -164,38 +177,39 @@ class RegistrationViewController: UIViewController {
     
     @objc private func tapRegister() {
         
-        let login = loginTextField.text ?? ""
-        let pass = passwordTextField.text ?? ""
-        let repeatPass = repeatPasswordTextField.text ?? ""
+        guard let login = loginTextField.text else {return}
+        guard let pass = passwordTextField.text else {return}
+        guard let repeatPass = repeatPasswordTextField.text else {return}
         
-        if login != "" && pass != "" {
-            if pass != repeatPass {
-                self.makeWrongAlert(massage: "Пароль неверный")
-                
+        
+        if pass != repeatPass {
+            self.makeWrongAlert(massage: "Пароль неверный")
+            return
+        }
+        
+        self.checkerService?.singUp(email: login, pass: pass) { check, errorString in
+            guard let errorString else {
+                if check {
+                    self.checkerService?.logIn(email: login, pass: pass) { user, error in
+                        let profileVC = ProfileViewController(user: user)
+                        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                              let sceneDelegate = windowScene.delegate as? SceneDelegate else {
+                            return
+                        }
+                        let tabbar = TabBarController(profileVC: profileVC)
+                        sceneDelegate.window?.rootViewController = tabbar
+                        
+                        
+                        
+                        //TODO: То есть я могу вернуться на экран регистрации и логина?) Это как? Вы должны подменять рутовый контроллер окна у сцен делегата. Для этого надо добраться до сцен делегата, взять его окно и подменить rootViewController
+                        
+                        //self.navigationController?.pushViewController(profileVC, animated: true) //TODO: Не поправлено
+                    }
+                }
                 return
             }
-            
-            self.checkerService.singUp(email: login, pass: pass) { check, errorString in
-                guard let errorString else {
-                    if check {
-                        self.checkerService.logIn(email: login, pass: pass) { user, error in
-                            let profileVC = ProfileViewController(user: user)
-                            
-                            //TODO: То есть я могу вернуться на экран регистрации и логина?) Это как? Вы должны подменять рутовый контроллер окна у сцен делегата. Для этого надо добраться до сцен делегата, взять его окно и подменить rootViewController
-
-                            self.navigationController?.pushViewController(profileVC, animated: true)
-                        }
-                    }
-                    return
-                }
-                //self.navigationController?.popViewController(animated: true)
-                self.makeWrongAlert(massage: errorString)
-            }
-        }
-        else {
-            self.makeWrongAlert(massage: "Пожалуйста, заполните все поля")
+            //self.navigationController?.popViewController(animated: true)
+            self.makeWrongAlert(massage: errorString)
         }
     }
-    
 }
-
