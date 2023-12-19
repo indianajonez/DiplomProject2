@@ -8,5 +8,5 @@
 import Foundation
 
 protocol FriendsGalleryDelegateProtocol: AnyObject {
-    func openGallery()
+    func openGalleryFriends()
 }

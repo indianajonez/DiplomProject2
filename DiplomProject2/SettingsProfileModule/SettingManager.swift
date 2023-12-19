@@ -14,6 +14,7 @@ final class SettingManager {
     
     static let shared: SettingManager = SettingManager()
     
+    var id: UUID?
     var name: String?
     var image: UIImage?
     var age: String?

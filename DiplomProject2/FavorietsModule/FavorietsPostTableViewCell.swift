@@ -117,6 +117,7 @@ class FavorietsPostTableViewCell: UITableViewCell {
         let screenWidth = screenSize.width
         
         NSLayoutConstraint.activate([
+            
             nameAuthor.topAnchor.constraint(equalTo: contentView.topAnchor, constant: labelInset),
             nameAuthor.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: labelInset),
             nameAuthor.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -labelInset),
@@ -147,9 +148,9 @@ class FavorietsPostTableViewCell: UITableViewCell {
             postViewsCount.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -labelInset),
             postViewsCount.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -labelInset),
             
-                        tapLikeButton.topAnchor.constraint(equalTo: descriptionOfPosts.bottomAnchor, constant: labelInset),
-                        tapLikeButton.leadingAnchor.constraint(equalTo: postLikesCount.trailingAnchor, constant: labelInset),
-                        tapLikeButton.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -labelInset)
+            tapLikeButton.topAnchor.constraint(equalTo: descriptionOfPosts.bottomAnchor, constant: labelInset),
+            tapLikeButton.leadingAnchor.constraint(equalTo: postLikesCount.trailingAnchor, constant: labelInset),
+            tapLikeButton.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -labelInset)
         ])
     }
 }

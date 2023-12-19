@@ -129,25 +129,25 @@ class ProfileHeaderView: UIView {
             avatarImageView.widthAnchor.constraint(equalToConstant: 100),
             avatarImageView.heightAnchor.constraint(equalToConstant: 100),
             
-            labelUserName.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20),
+            labelUserName.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 30),
             labelUserName.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: 10),
             
-            iconAboutUserView.topAnchor.constraint(equalTo: labelUserName.bottomAnchor, constant: 15),
+            iconAboutUserView.topAnchor.constraint(equalTo: labelUserName.bottomAnchor, constant: 30),
             iconAboutUserView.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: 10),
             
-            labelAboutUser.topAnchor.constraint(equalTo: labelUserName.bottomAnchor, constant: 15),
+            labelAboutUser.topAnchor.constraint(equalTo: labelUserName.bottomAnchor, constant: 30),
             labelAboutUser.leadingAnchor.constraint(equalTo: iconAboutUserView.trailingAnchor, constant: 4),
             
-            iconAgeView.topAnchor.constraint(equalTo: labelAboutUser.bottomAnchor, constant: 15),
+            iconAgeView.topAnchor.constraint(equalTo: labelAboutUser.bottomAnchor, constant: 30),
             iconAgeView.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: 10),
             
-            labelAge.topAnchor.constraint(equalTo: labelAboutUser.bottomAnchor, constant: 15),
+            labelAge.topAnchor.constraint(equalTo: labelAboutUser.bottomAnchor, constant: 30),
             labelAge.leadingAnchor.constraint(equalTo: iconAgeView.trailingAnchor, constant: 4),
             
-            iconEmailView.topAnchor.constraint(equalTo: labelAge.bottomAnchor, constant: 15),
+            iconEmailView.topAnchor.constraint(equalTo: labelAge.bottomAnchor, constant: 30),
             iconEmailView.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: 12),
             
-            fullNameLabel.topAnchor.constraint(equalTo: labelAge.bottomAnchor, constant: 15),
+            fullNameLabel.topAnchor.constraint(equalTo: labelAge.bottomAnchor, constant: 30),
             fullNameLabel.leadingAnchor.constraint(equalTo: iconEmailView.trailingAnchor, constant: 8),
 
         ])

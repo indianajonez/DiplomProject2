@@ -14,7 +14,7 @@ struct User: Codable {
     var login: String
     var name: String?
     var fullName: String?
-    //var avatar: UIImage?
+//    var avatar: UIImage?
     var age: String?
     var aboutUser: String?
     

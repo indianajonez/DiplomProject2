@@ -73,7 +73,6 @@ class SettingsProfileViewController: UIViewController {
         line.layer.borderWidth = 1
         line.layer.borderColor = UIColor.systemGray3.cgColor
         line.layer.backgroundColor = UIColor.systemGray3.cgColor
-        
         return line
     }()
     
@@ -100,7 +99,6 @@ class SettingsProfileViewController: UIViewController {
         line.layer.borderWidth = 1
         line.layer.borderColor = UIColor.systemGray3.cgColor
         line.layer.backgroundColor = UIColor.systemGray3.cgColor
-        
         return line
     }()
     

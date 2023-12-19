@@ -70,8 +70,8 @@ class FriendsTableViewCell: UITableViewCell {
     
     @objc
     private func tapButton() {
-        print("TAP")
-        self.delegate?.openGallery()
+        print("TAP but here should be friends, not photos")
+        self.delegate?.openGalleryFriends()
         print(#function)
     }
     

@@ -179,7 +179,7 @@ extension ProfileViewController: UITableViewDataSource {
 
 extension ProfileViewController: PhotosGalleryDelegateProtocol {
     
-    func openGallery() {
+    func openGalleryPhotos() {
         let galleryVC = PhotosViewController()
         navigationController?.pushViewController(galleryVC, animated: true)
     }
@@ -188,7 +188,7 @@ extension ProfileViewController: PhotosGalleryDelegateProtocol {
 // MARK: - FriendsGalleryDelegate
 
 extension ProfileViewController: FriendsGalleryDelegateProtocol {
-    func openFriends() {
+    func openGalleryFriends() {
         let friendsVC = FriendsViewController()
         navigationController?.pushViewController(friendsVC, animated: true)
     }

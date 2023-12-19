@@ -66,6 +66,7 @@ extension PhotosViewController: UICollectionViewDataSource {
 }
 
 // MARK: - UICollectionViewDelegateFlowLayout
+
 extension PhotosViewController: UICollectionViewDelegateFlowLayout {
     private var sideInset: CGFloat {return 8}
     

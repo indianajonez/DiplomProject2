@@ -75,7 +75,7 @@ class PhotosTableViewCell: UITableViewCell {
     @objc
     private func tapButton() {
         print("TAP")
-        self.delegate?.openGallery()
+        self.delegate?.openGalleryPhotos()
         print(#function)
     }
     
