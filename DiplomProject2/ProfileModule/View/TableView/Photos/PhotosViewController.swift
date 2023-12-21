@@ -11,7 +11,7 @@ class PhotosViewController: UIViewController {
     
     //MARK: - Private properties
     
-    private var imageList: [UIImage] = Photo.makeCollectioinPhotos()
+    private var imageList: [UIImage] = Photo.makeCollectioinPhotosByUIImage()
     
     private lazy var imageCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()

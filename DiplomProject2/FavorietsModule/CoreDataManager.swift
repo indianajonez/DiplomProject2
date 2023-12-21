@@ -51,14 +51,19 @@ final class CoreDataManager {
         }
     }
     
-    func createNewFavorite(_ data: Post) -> NSManagedObject {
-        let entity = NSEntityDescription.entity(forEntityName: "PostStorage", in: managedContext)!
+    func createNewFavorite(_ data: Post) -> NSManagedObject? {
+        guard let entity = NSEntityDescription.entity(forEntityName: "PostStorage", in: managedContext) else {
+            print("Failed to get entity for name 'PostStorage'")
+            return nil
+        }
+
         let newFavorite = NSManagedObject(entity: entity, insertInto: managedContext)
         newFavorite.setValue(data.author, forKeyPath: "author")
         newFavorite.setValue(data.description, forKeyPath: "desc")
         newFavorite.setValue(data.image, forKeyPath: "image")
         newFavorite.setValue(data.likes, forKeyPath: "likes")
         newFavorite.setValue(data.views, forKeyPath: "views")
+
         return newFavorite
     }
 }

@@ -37,7 +37,7 @@ struct Photo {
         return collection
     }
 
-    static func makeCollectioinPhotos() -> [UIImage] {
+    static func makeCollectioinPhotosByUIImage() -> [UIImage] {
         var collection: [UIImage] = []
         for image in 0...13 {
             collection.append( UIImage(named: "\(image)")!)

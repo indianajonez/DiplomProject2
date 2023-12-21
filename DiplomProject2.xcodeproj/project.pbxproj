@@ -13,7 +13,6 @@
 		F37B0B3C2B0A32E700F6B833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37B0B3A2B0A32E700F6B833 /* LaunchScreen.storyboard */; };
 		F37B0B452B0A34E400F6B833 /* ExtentionUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B442B0A34E400F6B833 /* ExtentionUIColor.swift */; };
 		F37B0B472B0A351C00F6B833 /* ExtentionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B462B0A351C00F6B833 /* ExtentionUIView.swift */; };
-		F37B0B4B2B0A355D00F6B833 /* PostStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B492B0A355D00F6B833 /* PostStorage.xcdatamodeld */; };
 		F37B0B4D2B0A35D900F6B833 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B4C2B0A35D900F6B833 /* CoreDataManager.swift */; };
 		F37B0B4F2B0A360700F6B833 /* FavorietsPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B4E2B0A360700F6B833 /* FavorietsPostTableViewCell.swift */; };
 		F37B0B512B0A363000F6B833 /* FavorietsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B502B0A363000F6B833 /* FavorietsViewController.swift */; };
@@ -60,6 +59,7 @@
 		F3BE0BF72B0BA45800C3D369 /* bensound-jumpingbean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3BE0BF52B0BA45800C3D369 /* bensound-jumpingbean.mp3 */; };
 		F3EC02FB2B30B97600F9C273 /* ManagerUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EC02FA2B30B97600F9C273 /* ManagerUserDefaults.swift */; };
 		F3EC03012B30C4F000F9C273 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3EC03002B30C4F000F9C273 /* GoogleService-Info.plist */; };
+		F3EC03042B32FF2400F9C273 /* PostStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3EC03022B32FF2400F9C273 /* PostStorage.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,7 +71,6 @@
 		F37B0B3D2B0A32E700F6B833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F37B0B442B0A34E400F6B833 /* ExtentionUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionUIColor.swift; sourceTree = "<group>"; };
 		F37B0B462B0A351C00F6B833 /* ExtentionUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionUIView.swift; sourceTree = "<group>"; };
-		F37B0B4A2B0A355D00F6B833 /* PostStorage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PostStorage.xcdatamodel; sourceTree = "<group>"; };
 		F37B0B4C2B0A35D900F6B833 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		F37B0B4E2B0A360700F6B833 /* FavorietsPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorietsPostTableViewCell.swift; sourceTree = "<group>"; };
 		F37B0B502B0A363000F6B833 /* FavorietsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorietsViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +114,7 @@
 		F3BE0BF52B0BA45800C3D369 /* bensound-jumpingbean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-jumpingbean.mp3"; sourceTree = "<group>"; };
 		F3EC02FA2B30B97600F9C273 /* ManagerUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerUserDefaults.swift; sourceTree = "<group>"; };
 		F3EC03002B30C4F000F9C273 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F3EC03032B32FF2400F9C273 /* PostStorage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PostStorage.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,10 +179,10 @@
 		F37B0B482B0A353A00F6B833 /* FavorietsModule */ = {
 			isa = PBXGroup;
 			children = (
-				F37B0B492B0A355D00F6B833 /* PostStorage.xcdatamodeld */,
 				F37B0B4C2B0A35D900F6B833 /* CoreDataManager.swift */,
 				F37B0B4E2B0A360700F6B833 /* FavorietsPostTableViewCell.swift */,
 				F37B0B502B0A363000F6B833 /* FavorietsViewController.swift */,
+				F3EC03022B32FF2400F9C273 /* PostStorage.xcdatamodeld */,
 			);
 			path = FavorietsModule;
 			sourceTree = "<group>";
@@ -472,7 +472,6 @@
 				F37B0B712B0A393100F6B833 /* LoginViewController.swift in Sources */,
 				F37B0B452B0A34E400F6B833 /* ExtentionUIColor.swift in Sources */,
 				F37B0B9D2B0A3EE200F6B833 /* SettingProfileViewController.swift in Sources */,
-				F37B0B4B2B0A355D00F6B833 /* PostStorage.xcdatamodeld in Sources */,
 				F37B0B512B0A363000F6B833 /* FavorietsViewController.swift in Sources */,
 				F37B0B672B0A386200F6B833 /* User.swift in Sources */,
 				F37B0B302B0A32E600F6B833 /* AppDelegate.swift in Sources */,
@@ -487,6 +486,7 @@
 				F37B0B942B0A3DE700F6B833 /* PhotosTableViewCell.swift in Sources */,
 				F37B0B8B2B0A3CB900F6B833 /* FriendstableViewCell.swift in Sources */,
 				F37B0B732B0A396600F6B833 /* LoginViewControllerDelegateError.swift in Sources */,
+				F3EC03042B32FF2400F9C273 /* PostStorage.xcdatamodeld in Sources */,
 				F37B0B6D2B0A38E600F6B833 /* CheckService.swift in Sources */,
 				F37B0B6F2B0A390800F6B833 /* CurrentUserService.swift in Sources */,
 				F37B0B892B0A3C7C00F6B833 /* FriendsViewController.swift in Sources */,
@@ -745,12 +745,12 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		F37B0B492B0A355D00F6B833 /* PostStorage.xcdatamodeld */ = {
+		F3EC03022B32FF2400F9C273 /* PostStorage.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				F37B0B4A2B0A355D00F6B833 /* PostStorage.xcdatamodel */,
+				F3EC03032B32FF2400F9C273 /* PostStorage.xcdatamodel */,
 			);
-			currentVersion = F37B0B4A2B0A355D00F6B833 /* PostStorage.xcdatamodel */;
+			currentVersion = F3EC03032B32FF2400F9C273 /* PostStorage.xcdatamodel */;
 			path = PostStorage.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
