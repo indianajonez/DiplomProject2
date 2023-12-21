@@ -47,32 +47,35 @@ class FavorietsViewController: UIViewController {
     
     //TODO: Зачем на главный поток переводить? Разве ты была на фоновом при получении постов из кор даты? Также зачем в кложуре [weak self]? У тебя есть retain cycle?
     
-    private func getFromCoreData() {
-//        CoreDataManager.shared.persistentContainer.performBackgroundTask { [weak self] context in
-//                guard let self = self else { return }
-//
-//                let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "PostStorage")
-//                do {
-//                    self.favoriteData = try context.fetch(fetchRequest)
-//
-//                    // Обновление UI должно выполняться на основном потоке
-//                    DispatchQueue.main.async {
-//                        self.postTableView.reloadData()
-//                    }
-//                } catch {
-//                    // Обработка ошибок запроса CoreData
-//                    print("Error fetching data from CoreData: \(error)")
-//                }
-//            }
-//        }
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "PostStorage")
-        favoriteData = CoreDataManager.shared.fetchData(fetchRequest)
-        DispatchQueue.main.async { [weak self] in // как отправить не на главный поток
-            guard let self = self else {return}
-            self.postTableView.reloadData()
+     func getFromCoreData() {
+         
+         //TODO: Попробовала перевести на backgroud поток, но теперь выводит в консоль сообщение - "CUICatalog: Invalid asset name supplied: ''" и не показывает данные постов
+        
+        CoreDataManager.shared.appDelegate.persistentContainer.performBackgroundTask { [weak self] context in
+                guard let self = self else { return }
+
+                let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "PostStorage")
+                do {
+                    self.favoriteData = try context.fetch(fetchRequest)
+
+                    // Обновление UI должно выполняться на основном потоке
+                    DispatchQueue.main.async {
+                        self.postTableView.reloadData()
+                    }
+                } catch {
+                    // Обработка ошибок запроса CoreData
+                    print("Error fetching data from CoreData: \(error)")
+                }
+            }
         }
-        self.postTableView.reloadData()
-    }
+//        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "PostStorage")
+//        favoriteData = CoreDataManager.shared.fetchData(fetchRequest)
+//        DispatchQueue.main.async { [weak self] in // как отправить не на главный поток
+//            guard let self = self else {return}
+//            self.postTableView.reloadData()
+//        }
+//        self.postTableView.reloadData()
+//    }
     
     private func setupView() {
         view.addSubview(postTableView)

@@ -16,7 +16,7 @@ final class CoreDataManager {
     
     //MARK: - Private properties
     
-    private let appDelegate: AppDelegate
+    let appDelegate: AppDelegate // appDelegate должен быть приватным (сделала пока публичным, чтобы работала функция getFromCoreData() )
     private let managedContext: NSManagedObjectContext
     
     //MARK: - Life cycles
