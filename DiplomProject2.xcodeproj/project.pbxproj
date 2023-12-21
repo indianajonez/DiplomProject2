@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F317CD7E2B3435710030569B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F317CD7D2B3435710030569B /* GoogleService-Info.plist */; };
 		F37B0B302B0A32E600F6B833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B2F2B0A32E600F6B833 /* AppDelegate.swift */; };
 		F37B0B322B0A32E600F6B833 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B312B0A32E600F6B833 /* SceneDelegate.swift */; };
 		F37B0B392B0A32E700F6B833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F37B0B382B0A32E700F6B833 /* Assets.xcassets */; };
@@ -58,11 +59,11 @@
 		F3BE0BF62B0BA45800C3D369 /* bensound-growingold.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3BE0BF42B0BA45800C3D369 /* bensound-growingold.mp3 */; };
 		F3BE0BF72B0BA45800C3D369 /* bensound-jumpingbean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3BE0BF52B0BA45800C3D369 /* bensound-jumpingbean.mp3 */; };
 		F3EC02FB2B30B97600F9C273 /* ManagerUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EC02FA2B30B97600F9C273 /* ManagerUserDefaults.swift */; };
-		F3EC03012B30C4F000F9C273 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3EC03002B30C4F000F9C273 /* GoogleService-Info.plist */; };
 		F3EC03042B32FF2400F9C273 /* PostStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3EC03022B32FF2400F9C273 /* PostStorage.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F317CD7D2B3435710030569B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "DiplomProject2/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F37B0B2C2B0A32E600F6B833 /* DiplomProject2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiplomProject2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37B0B2F2B0A32E600F6B833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F37B0B312B0A32E600F6B833 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,7 +114,6 @@
 		F3BE0BF42B0BA45800C3D369 /* bensound-growingold.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-growingold.mp3"; sourceTree = "<group>"; };
 		F3BE0BF52B0BA45800C3D369 /* bensound-jumpingbean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-jumpingbean.mp3"; sourceTree = "<group>"; };
 		F3EC02FA2B30B97600F9C273 /* ManagerUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerUserDefaults.swift; sourceTree = "<group>"; };
-		F3EC03002B30C4F000F9C273 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F3EC03032B32FF2400F9C273 /* PostStorage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PostStorage.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -345,9 +345,9 @@
 			isa = PBXGroup;
 			children = (
 				F37B0B3A2B0A32E700F6B833 /* LaunchScreen.storyboard */,
-				F3EC03002B30C4F000F9C273 /* GoogleService-Info.plist */,
 				F37B0B382B0A32E700F6B833 /* Assets.xcassets */,
 				F37B0B312B0A32E600F6B833 /* SceneDelegate.swift */,
+				F317CD7D2B3435710030569B /* GoogleService-Info.plist */,
 				F37B0B2F2B0A32E600F6B833 /* AppDelegate.swift */,
 			);
 			path = AppSettings;
@@ -454,7 +454,7 @@
 				F3BE0BED2B0BA43F00C3D369 /* bensound-itmighttakeawhile.mp3 in Resources */,
 				F37B0B392B0A32E700F6B833 /* Assets.xcassets in Resources */,
 				F3BE0BF12B0BA44D00C3D369 /* bensound-jambomambo.mp3 in Resources */,
-				F3EC03012B30C4F000F9C273 /* GoogleService-Info.plist in Resources */,
+				F317CD7E2B3435710030569B /* GoogleService-Info.plist in Resources */,
 				F3BE0BEC2B0BA43F00C3D369 /* bensound-pleasewatchmyback.mp3 in Resources */,
 				F3BE0BF72B0BA45800C3D369 /* bensound-jumpingbean.mp3 in Resources */,
 			);

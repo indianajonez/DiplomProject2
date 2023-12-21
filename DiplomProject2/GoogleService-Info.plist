@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyBPVQ2pN_gLunHI4nNIrdqwSeubZ9M0YTg</string>
+	<string>AIzaSyDrUrEnRXb8H1I6-Nn9IHaVHgDT4a5plCI</string>
 	<key>GCM_SENDER_ID</key>
-	<string>735572262060</string>
+	<string>94889025390</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.indianaJonez.AppDiplom-ES</string>
+	<string>com.indiana.jonez.DiplomProject2</string>
 	<key>PROJECT_ID</key>
-	<string>appdiplom-es</string>
+	<string>diplomproject3</string>
 	<key>STORAGE_BUCKET</key>
-	<string>appdiplom-es.appspot.com</string>
+	<string>diplomproject3.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:735572262060:ios:896d30fe2c374d9ae93309</string>
+	<string>1:94889025390:ios:7da638b11a2c31fdfdeb7f</string>
 </dict>
 </plist>
