@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F31145032B39763B00B9BB4F /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31145022B39763B00B9BB4F /* FavoritesViewController.swift */; };
+		F31145052B39765200B9BB4F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31145042B39765200B9BB4F /* CoreDataManager.swift */; };
 		F317CD7E2B3435710030569B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F317CD7D2B3435710030569B /* GoogleService-Info.plist */; };
 		F37B0B302B0A32E600F6B833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B2F2B0A32E600F6B833 /* AppDelegate.swift */; };
 		F37B0B322B0A32E600F6B833 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B312B0A32E600F6B833 /* SceneDelegate.swift */; };
@@ -14,9 +16,7 @@
 		F37B0B3C2B0A32E700F6B833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37B0B3A2B0A32E700F6B833 /* LaunchScreen.storyboard */; };
 		F37B0B452B0A34E400F6B833 /* ExtentionUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B442B0A34E400F6B833 /* ExtentionUIColor.swift */; };
 		F37B0B472B0A351C00F6B833 /* ExtentionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B462B0A351C00F6B833 /* ExtentionUIView.swift */; };
-		F37B0B4D2B0A35D900F6B833 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B4C2B0A35D900F6B833 /* CoreDataManager.swift */; };
-		F37B0B4F2B0A360700F6B833 /* FavorietsPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B4E2B0A360700F6B833 /* FavorietsPostTableViewCell.swift */; };
-		F37B0B512B0A363000F6B833 /* FavorietsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B502B0A363000F6B833 /* FavorietsViewController.swift */; };
+		F37B0B4F2B0A360700F6B833 /* FavoritesPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B4E2B0A360700F6B833 /* FavoritesPostTableViewCell.swift */; };
 		F37B0B552B0A369B00F6B833 /* AlbumTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B542B0A369B00F6B833 /* AlbumTableView.swift */; };
 		F37B0B582B0A36DB00F6B833 /* MediaPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B572B0A36DB00F6B833 /* MediaPlayer.swift */; };
 		F37B0B5A2B0A370200F6B833 /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B0B592B0A370200F6B833 /* MediaPlayerViewController.swift */; };
@@ -63,6 +63,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F31145022B39763B00B9BB4F /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		F31145042B39765200B9BB4F /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		F317CD7D2B3435710030569B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "DiplomProject2/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F37B0B2C2B0A32E600F6B833 /* DiplomProject2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiplomProject2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37B0B2F2B0A32E600F6B833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,9 +74,7 @@
 		F37B0B3D2B0A32E700F6B833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F37B0B442B0A34E400F6B833 /* ExtentionUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionUIColor.swift; sourceTree = "<group>"; };
 		F37B0B462B0A351C00F6B833 /* ExtentionUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionUIView.swift; sourceTree = "<group>"; };
-		F37B0B4C2B0A35D900F6B833 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		F37B0B4E2B0A360700F6B833 /* FavorietsPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorietsPostTableViewCell.swift; sourceTree = "<group>"; };
-		F37B0B502B0A363000F6B833 /* FavorietsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorietsViewController.swift; sourceTree = "<group>"; };
+		F37B0B4E2B0A360700F6B833 /* FavoritesPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPostTableViewCell.swift; sourceTree = "<group>"; };
 		F37B0B542B0A369B00F6B833 /* AlbumTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableView.swift; sourceTree = "<group>"; };
 		F37B0B572B0A36DB00F6B833 /* MediaPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPlayer.swift; sourceTree = "<group>"; };
 		F37B0B592B0A370200F6B833 /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPlayerViewController.swift; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 				F37B0BA32B0A40A200F6B833 /* acoustic */,
 				F37B0BA42B0A40BE00F6B833 /* jazz */,
 				F37B0B432B0A33CA00F6B833 /* Extention */,
-				F37B0B482B0A353A00F6B833 /* FavorietsModule */,
+				F37B0B482B0A353A00F6B833 /* FavoritesModule */,
 				F37B0B522B0A364600F6B833 /* MediaPlayerModule */,
 				F37B0B622B0A380B00F6B833 /* LoginModule */,
 				F37B0B782B0A3A4400F6B833 /* ProfileModule */,
@@ -176,15 +176,15 @@
 			path = Extention;
 			sourceTree = "<group>";
 		};
-		F37B0B482B0A353A00F6B833 /* FavorietsModule */ = {
+		F37B0B482B0A353A00F6B833 /* FavoritesModule */ = {
 			isa = PBXGroup;
 			children = (
-				F37B0B4C2B0A35D900F6B833 /* CoreDataManager.swift */,
-				F37B0B4E2B0A360700F6B833 /* FavorietsPostTableViewCell.swift */,
-				F37B0B502B0A363000F6B833 /* FavorietsViewController.swift */,
+				F31145022B39763B00B9BB4F /* FavoritesViewController.swift */,
+				F37B0B4E2B0A360700F6B833 /* FavoritesPostTableViewCell.swift */,
+				F31145042B39765200B9BB4F /* CoreDataManager.swift */,
 				F3EC03022B32FF2400F9C273 /* PostStorage.xcdatamodeld */,
 			);
-			path = FavorietsModule;
+			path = FavoritesModule;
 			sourceTree = "<group>";
 		};
 		F37B0B522B0A364600F6B833 /* MediaPlayerModule */ = {
@@ -472,7 +472,6 @@
 				F37B0B712B0A393100F6B833 /* LoginViewController.swift in Sources */,
 				F37B0B452B0A34E400F6B833 /* ExtentionUIColor.swift in Sources */,
 				F37B0B9D2B0A3EE200F6B833 /* SettingProfileViewController.swift in Sources */,
-				F37B0B512B0A363000F6B833 /* FavorietsViewController.swift in Sources */,
 				F37B0B672B0A386200F6B833 /* User.swift in Sources */,
 				F37B0B302B0A32E600F6B833 /* AppDelegate.swift in Sources */,
 				F37B0B8F2B0A3D0F00F6B833 /* FriendsCollectionViewCell.swift in Sources */,
@@ -484,14 +483,15 @@
 				F37B0B472B0A351C00F6B833 /* ExtentionUIView.swift in Sources */,
 				F37B0B7E2B0A3B9000F6B833 /* ProfileViewController.swift in Sources */,
 				F37B0B942B0A3DE700F6B833 /* PhotosTableViewCell.swift in Sources */,
+				F31145032B39763B00B9BB4F /* FavoritesViewController.swift in Sources */,
 				F37B0B8B2B0A3CB900F6B833 /* FriendstableViewCell.swift in Sources */,
 				F37B0B732B0A396600F6B833 /* LoginViewControllerDelegateError.swift in Sources */,
 				F3EC03042B32FF2400F9C273 /* PostStorage.xcdatamodeld in Sources */,
 				F37B0B6D2B0A38E600F6B833 /* CheckService.swift in Sources */,
 				F37B0B6F2B0A390800F6B833 /* CurrentUserService.swift in Sources */,
 				F37B0B892B0A3C7C00F6B833 /* FriendsViewController.swift in Sources */,
-				F37B0B4D2B0A35D900F6B833 /* CoreDataManager.swift in Sources */,
-				F37B0B4F2B0A360700F6B833 /* FavorietsPostTableViewCell.swift in Sources */,
+				F31145052B39765200B9BB4F /* CoreDataManager.swift in Sources */,
+				F37B0B4F2B0A360700F6B833 /* FavoritesPostTableViewCell.swift in Sources */,
 				F37B0B612B0A378200F6B833 /* Song.swift in Sources */,
 				F37B0B582B0A36DB00F6B833 /* MediaPlayer.swift in Sources */,
 				F37B0B322B0A32E600F6B833 /* SceneDelegate.swift in Sources */,

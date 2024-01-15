@@ -1,5 +1,5 @@
 //
-//  FavorietsPostTableViewCell.swift
+//  FavoritesPostTableViewCell.swift
 //  DiplomProject2
 //
 //  Created by Ekaterina Saveleva on 19.11.2023.
@@ -9,7 +9,7 @@ import UIKit
 import CoreData
 
 
-class FavorietsPostTableViewCell: UITableViewCell {
+class FavoritesPostTableViewCell: UITableViewCell {
     
     //MARK: - Private properties
     

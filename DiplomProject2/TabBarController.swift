@@ -13,7 +13,7 @@ class TabBarController: UITabBarController {
     
     let profileVC: ProfileViewController?
     let mediaVC = MediaPlayerViewController()
-    let favorietsVC = FavorietsViewController()
+    let favorietsVC = FavoritesViewController()
     
     //MARK: - Init
     

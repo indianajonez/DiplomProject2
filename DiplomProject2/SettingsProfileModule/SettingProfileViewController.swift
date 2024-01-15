@@ -88,7 +88,7 @@ class SettingsProfileViewController: UIViewController {
     private lazy var textFieldAboutUser: UITextField = {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.placeholder = "Расскажите о себе: увлечения, работа, учеба "
+        textField.placeholder = "Расскажите о себе: увлечения, работа, учеба."
         textField.borderStyle = .none
         return textField
     }()

@@ -8,8 +8,6 @@
 import UIKit
 import FirebaseAuth
 
-//TODO: Почему в Login checkerService закрыт протоколом и инджектится через конструктор, а в RegistrationViewController у вас композиция, и checkerService порождается непосредственно контроллером?) Наверное, надо как-то унифицировать. Первый вариант, как в LoginViewController правильнее. DONE
-
 class LoginViewController: UIViewController {
     
     //MARK: - Private properties
@@ -27,6 +25,7 @@ class LoginViewController: UIViewController {
         image.layer.shadowColor = UIColor.gray.cgColor
         image.layer.shadowOpacity = 0.3
         image.layer.shadowRadius = 5
+        image.contentMode = .scaleAspectFit  //TODO: Добавила contentMode
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
@@ -34,7 +33,7 @@ class LoginViewController: UIViewController {
     private lazy var loginTextField: UITextField = {
         let login = UITextField()
         login.translatesAutoresizingMaskIntoConstraints = false
-        login.textColor = UIColor.createColor(lightMode: .black, darkMode: .white) //Palette.labelColor
+        login.textColor = UIColor.createColor(lightMode: .black, darkMode: .white)
         login.layer.backgroundColor = UIColor.createCGolor(lightMode: .systemGray6, darkMode: .darkGray)
         login.layer.borderColor = UIColor.createCGolor(lightMode: .systemGray4, darkMode: .systemGray2)
         login.layer.borderWidth = 0.5
@@ -164,7 +163,7 @@ class LoginViewController: UIViewController {
             scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             
             logoImageView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 100),
-            logoImageView.widthAnchor.constraint(equalToConstant: 230),
+            logoImageView.widthAnchor.constraint(equalToConstant: 200),
             logoImageView.heightAnchor.constraint(equalToConstant: 200),
             logoImageView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
             
@@ -196,7 +195,6 @@ class LoginViewController: UIViewController {
     private func didTapLoginButton() {
         
         let login = self.loginTextField.text ?? ""
-        // нужно добавить и унифицировать forKey { _ in self.userDefaults.setValue(true, forKey: " logged_in ")
         let password = self.passwordTextField.text ?? ""
         checkerService?.logIn(email: login, pass: password) { user, errorString in // NOTTODO: не заходит
             guard let user else {
