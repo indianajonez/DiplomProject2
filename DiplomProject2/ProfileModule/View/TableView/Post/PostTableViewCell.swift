@@ -152,5 +152,4 @@ class PostTableViewCell: UITableViewCell {
         let name = isTapped ? "heart.fill" : "heart"
         tapLikeButton.setImage(UIImage(systemName: name), for: .normal)
     }
-    
 }

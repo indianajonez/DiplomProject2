@@ -162,6 +162,7 @@ extension ProfileViewController: UITableViewDataSource {
             return cell
             
         } else {
+            
             guard let cell = tableView.dequeueReusableCell(withIdentifier: PostTableViewCell.identifier) as? PostTableViewCell else { return UITableViewCell()}
             cell.setupCell(listPost[indexPath.row])
             cell.backgroundColor = UIColor.createColor(lightMode: .systemGray6, darkMode: .black)
